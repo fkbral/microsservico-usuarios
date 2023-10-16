@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node-dev --respawn --transpile-only src/app.ts"
   },
-  "author": "Francisco Fagundes",
+  "author": "Raniel Mendonça",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

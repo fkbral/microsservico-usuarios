@@ -1,8 +1,8 @@
 import express from "express";
 import dotenv from "dotenv";
-import studentsRouter from "../routes/studentsRouter";
+import studentsRouter from "./routes/studentsRouter";
 import cors from "cors";
-import professionalsRouter from "../routes/professionalsRouter";
+import professionalsRouter from "./routes/professionalsRouter";
 
 dotenv.config();
 
