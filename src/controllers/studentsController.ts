@@ -4,24 +4,13 @@ import { createDbConnection } from "../db/dbConfig";
 import { Database } from "sqlite3";
 import logger from "../services/logger";
 
-
 let db: Database = createDbConnection();
 
 const studentsRoot = (req: Request, res: Response, next: NextFunction) => {
-    // logger.fatal("fatal");
-    // logger.error("error");
-    // logger.warn("warn");
-    // logger.info("info");
-    // logger.debug("debug");
-    // logger.trace("trace");
     res.sendStatus(201);
-
-    // res.send("Página Inicial Students");
 }
 
 const studentsList = (req: Request, res: Response) => {
-
-
     let studentsList: Student[] = [];
 
     let sql = `SELECT * FROM students`;
@@ -59,7 +48,6 @@ const studentsListByYearAndRoom = (req: Request, res: Response) => {
 
     })
 }
-
 
 const studentDetailsByQuery = (req: Request, res: Response) => {
     logger.info(req);
@@ -188,8 +176,6 @@ const deleteStudentByParams = (req: Request, res: Response) => {
         res.send("Student Deleted");
     })
 }
-
-
 
 export {
     studentsRoot,
