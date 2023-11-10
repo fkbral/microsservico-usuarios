@@ -79,5 +79,11 @@ describe("Students Controller", () => {
         ])
       );
     });
+
+    test("Testar se ao listar alunos sem criá-los se um array vazio é retornado", async () => {
+      const studentList = await studentsListHandler();
+
+      expect(studentList).toHaveLength(0);
+    });
   });
 });
